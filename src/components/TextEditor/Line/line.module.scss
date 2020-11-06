@@ -1,0 +1,42 @@
+@mixin lineContainer {
+    display: flex;
+    align-items: center;
+    padding: .2rem 0;
+    width: 100%;
+    font-size: 1.5rem;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    & input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    & .title {
+        color: #8ac858;
+    }
+
+    & .string {
+        color: #ffc800;
+    }
+
+    & .number {
+        color: #80c3da;
+    }
+
+    & .unkown {
+        color: #fd5d47;
+    }
+}
+
+.text__editor__container {
+    @include lineContainer;
+}
+
+.current__line {
+    @include lineContainer;
+    border-top: 1px solid rgb(104, 104, 104);
+    border-bottom: 1px solid rgb(104, 104, 104);
+    box-sizing: border-box;
+}

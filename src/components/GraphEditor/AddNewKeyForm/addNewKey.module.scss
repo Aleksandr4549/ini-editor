@@ -1,0 +1,13 @@
+.add__key__container {
+    & input {
+        margin-bottom: 1rem;
+        padding: .5rem .4rem;
+        border: 1px solid #222;
+        border-radius: .2rem;
+        outline: none;
+    }
+
+    & span {
+        margin: 0 .5rem;
+    }
+}

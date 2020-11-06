@@ -1,0 +1,27 @@
+$darkColor: #22272b;
+
+.sidebar__container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding-right: .5rem;
+    border-right: 2px solid #222;
+
+    & input, div {
+        padding: .2rem .4rem; 
+        cursor: pointer;
+    }
+
+    & input {
+        margin: 1rem 0;
+        outline: none;
+    }
+
+    & div {
+        user-select: none;  
+    }
+
+    & .active {
+        background-color: lighten($darkColor, 10%);
+    }
+}

@@ -1,0 +1,11 @@
+.text__editor__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+
+    & .btn__wrapper {
+        margin-top: 1rem;
+    }
+}

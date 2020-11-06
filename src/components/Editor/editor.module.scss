@@ -1,0 +1,18 @@
+.editor__container {
+    width: 80%;
+    padding-right: 1rem;
+
+    & .select__mode__container { 
+        text-align: right;
+
+        & select {
+            padding: .3rem .5rem;
+            width: 7rem;
+            color: rgb(143, 143, 143);
+            background-color: transparent;
+            border: 1px solid rgb(22, 22, 22);
+            border-radius: .2rem;
+            outline: none;
+        }
+    }
+}

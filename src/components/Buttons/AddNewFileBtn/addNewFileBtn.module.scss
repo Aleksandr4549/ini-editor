@@ -1,0 +1,16 @@
+.add__file__btn {
+    & svg {
+        max-width: 1.5rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover {
+            animation: rotate 3s linear infinite;
+            @keyframes rotate {
+                from {
+                  transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

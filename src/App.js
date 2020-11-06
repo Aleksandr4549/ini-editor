@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Sidebar from './components/Sidebar/Sidebar';
+import EditorContainer from './components/Editor/EditorContainer';
+import { getFiles } from './redux/reducers/editor-reducer';
+import styles from './app.module.scss';
+
+const App = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getFiles());
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    return (
+    <div className={styles.app__container}>
+        <Sidebar />
+        <EditorContainer />
     </div>
-  );
+    );
 }
 
 export default App;

@@ -1,0 +1,9 @@
+.add__section__container {
+    & .add__section__title {
+        margin-bottom: 1rem;
+        padding: .5rem .4rem;
+        border: 1px solid #222;
+        border-radius: .2rem;
+        outline: none;
+    }
+} 

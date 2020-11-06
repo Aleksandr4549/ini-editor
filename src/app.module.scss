@@ -1,0 +1,10 @@
+$darkColor: #22272b;
+
+.app__container {
+    display: flex;
+    padding: 1rem .5rem;
+    min-height: 100vh;
+    color: #bfbfbf;
+    background-color: $darkColor;
+    box-sizing: border-box;
+}
